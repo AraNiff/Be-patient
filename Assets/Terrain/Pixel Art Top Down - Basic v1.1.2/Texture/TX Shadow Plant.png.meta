@@ -1,40 +1,34 @@
 fileFormatVersion: 2
-guid: 3261577a66372154dad82127b8136777
+guid: 5ef05354ca7ebd546af2f764250f8a97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7928858964255100155
-    second: Skeleton Idle_0
+      213: -285014688562201892
+    second: TX Shadow Plant_0
   - first:
-      213: -289379152601194012
-    second: Skeleton Idle_1
+      213: 4684394848329141685
+    second: TX Shadow Plant_1
   - first:
-      213: -8331204611373963175
-    second: Skeleton Idle_2
+      213: -67500903722437968
+    second: TX Shadow Plant_2
   - first:
-      213: 5974531914738200450
-    second: Skeleton Idle_3
+      213: -2325478280088312037
+    second: TX Shadow Plant_3
   - first:
-      213: 1900126310482141809
-    second: Skeleton Idle_4
+      213: 705235396439732172
+    second: TX Shadow Plant_4
   - first:
-      213: -9007221444457188966
-    second: Skeleton Idle_5
+      213: 399994617541002671
+    second: TX Shadow Plant_5
   - first:
-      213: 6361432402118329833
-    second: Skeleton Idle_6
+      213: -3648626657921471163
+    second: TX Shadow Plant_6
   - first:
-      213: 1571032212639168507
-    second: Skeleton Idle_7
+      213: 2641389629763866341
+    second: TX Shadow Plant_7
   - first:
-      213: 7611122742130972421
-    second: Skeleton Idle_8
-  - first:
-      213: 5180031473007828922
-    second: Skeleton Idle_9
-  - first:
-      213: -5784503621931760760
-    second: Skeleton Idle_10
+      213: 3209891600468911967
+    second: TX Shadow Plant_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -156,57 +150,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton Idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfcc8961837f80e60800000000000000
-      internalID: 7928858964255100155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Idle_1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 0
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e16dc3a13bebfbf0800000000000000
-      internalID: -289379152601194012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Idle_2
+      name: TX Shadow Plant_0
       rect:
         serializedVersion: 2
         x: 47
-        y: 0
-        width: 24
-        height: 32
+        y: 359
+        width: 88
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95865fbeb8d916c80800000000000000
-      internalID: -8331204611373963175
+      spriteID: cda3b7c96ac6b0cf0800000000000000
+      internalID: -285014688562201892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_3
+      name: TX Shadow Plant_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 0
-        width: 24
-        height: 32
+        x: 172
+        y: 360
+        width: 84
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28f643d3f1dc9e250800000000000000
-      internalID: 5974531914738200450
+      spriteID: 5bd045aab40520140800000000000000
+      internalID: 4684394848329141685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_4
+      name: TX Shadow Plant_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 24
-        height: 32
+        x: 303
+        y: 360
+        width: 76
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17269a4efca9e5a10800000000000000
-      internalID: 1900126310482141809
+      spriteID: 0b23b932940301ff0800000000000000
+      internalID: -67500903722437968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_5
+      name: TX Shadow Plant_3
       rect:
         serializedVersion: 2
-        x: 121
-        y: 0
+        x: 38
+        y: 292
         width: 24
-        height: 32
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9139dd81dbeff280800000000000000
-      internalID: -9007221444457188966
+      spriteID: b17237e33dd3abfd0800000000000000
+      internalID: -2325478280088312037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_6
+      name: TX Shadow Plant_4
       rect:
         serializedVersion: 2
-        x: 145
-        y: 0
-        width: 24
-        height: 32
+        x: 98
+        y: 289
+        width: 30
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e54ceeb019584850800000000000000
-      internalID: 6361432402118329833
+      spriteID: ccf62d74bdf79c900800000000000000
+      internalID: 705235396439732172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_7
+      name: TX Shadow Plant_5
       rect:
         serializedVersion: 2
-        x: 168
-        y: 0
-        width: 24
-        height: 32
+        x: 159
+        y: 288
+        width: 39
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,20 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf7bd05497d6dc510800000000000000
-      internalID: 1571032212639168507
+      spriteID: fa589924cf01d8500800000000000000
+      internalID: 399994617541002671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_8
+      name: TX Shadow Plant_6
       rect:
         serializedVersion: 2
-        x: 191
-        y: 0
-        width: 24
-        height: 32
+        x: 219
+        y: 282
+        width: 48
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5071d9afec320a960800000000000000
-      internalID: 7611122742130972421
+      spriteID: 54de198c2697d5dc0800000000000000
+      internalID: -3648626657921471163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_9
+      name: TX Shadow Plant_7
       rect:
         serializedVersion: 2
-        x: 215
-        y: 0
-        width: 24
-        height: 32
+        x: 284
+        y: 278
+        width: 40
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,20 +319,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abf99f10e2b23e740800000000000000
-      internalID: 5180031473007828922
+      spriteID: 5eec973afd918a420800000000000000
+      internalID: 2641389629763866341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_10
+      name: TX Shadow Plant_8
       rect:
         serializedVersion: 2
-        x: 239
-        y: 0
-        width: 24
-        height: 32
+        x: 347
+        y: 284
+        width: 43
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8830ccc7a9059bfa0800000000000000
-      internalID: -5784503621931760760
+      spriteID: f57a5756763db8c20800000000000000
+      internalID: 3209891600468911967
       vertices: []
       indices: 
       edges: []
@@ -411,17 +361,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Skeleton Idle_0: 7928858964255100155
-      Skeleton Idle_1: -289379152601194012
-      Skeleton Idle_10: -5784503621931760760
-      Skeleton Idle_2: -8331204611373963175
-      Skeleton Idle_3: 5974531914738200450
-      Skeleton Idle_4: 1900126310482141809
-      Skeleton Idle_5: -9007221444457188966
-      Skeleton Idle_6: 6361432402118329833
-      Skeleton Idle_7: 1571032212639168507
-      Skeleton Idle_8: 7611122742130972421
-      Skeleton Idle_9: 5180031473007828922
+      TX Shadow Plant_0: -285014688562201892
+      TX Shadow Plant_1: 4684394848329141685
+      TX Shadow Plant_2: -67500903722437968
+      TX Shadow Plant_3: -2325478280088312037
+      TX Shadow Plant_4: 705235396439732172
+      TX Shadow Plant_5: 399994617541002671
+      TX Shadow Plant_6: -3648626657921471163
+      TX Shadow Plant_7: 2641389629763866341
+      TX Shadow Plant_8: 3209891600468911967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

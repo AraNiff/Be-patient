@@ -1,40 +1,31 @@
 fileFormatVersion: 2
-guid: 3261577a66372154dad82127b8136777
+guid: 8d0ab70ee80e41047ae084ff170e5efe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7928858964255100155
-    second: Skeleton Idle_0
+      213: -5380237423685108026
+    second: TX Struct_0
   - first:
-      213: -289379152601194012
-    second: Skeleton Idle_1
+      213: 141675554456027117
+    second: TX Struct_1
   - first:
-      213: -8331204611373963175
-    second: Skeleton Idle_2
+      213: 5869078902113103909
+    second: TX Struct_2
   - first:
-      213: 5974531914738200450
-    second: Skeleton Idle_3
+      213: -7381738133999487609
+    second: TX Struct_3
   - first:
-      213: 1900126310482141809
-    second: Skeleton Idle_4
+      213: -510105923369629673
+    second: TX Struct_4
   - first:
-      213: -9007221444457188966
-    second: Skeleton Idle_5
+      213: -2677049488981355681
+    second: TX Struct_5
   - first:
-      213: 6361432402118329833
-    second: Skeleton Idle_6
+      213: -3684389700825655485
+    second: TX Struct_6
   - first:
-      213: 1571032212639168507
-    second: Skeleton Idle_7
-  - first:
-      213: 7611122742130972421
-    second: Skeleton Idle_8
-  - first:
-      213: 5180031473007828922
-    second: Skeleton Idle_9
-  - first:
-      213: -5784503621931760760
-    second: Skeleton Idle_10
+      213: -5664187630041763615
+    second: TX Struct_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -156,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton Idle_0
+      name: TX Struct_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 23
-        height: 32
+        x: 31
+        y: 383
+        width: 66
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfcc8961837f80e60800000000000000
-      internalID: 7928858964255100155
+      spriteID: 6ce7cf1a19e8555b0800000000000000
+      internalID: -5380237423685108026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_1
+      name: TX Struct_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 0
-        width: 24
-        height: 32
+        x: 127
+        y: 383
+        width: 67
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e16dc3a13bebfbf0800000000000000
-      internalID: -289379152601194012
+      spriteID: def35b88a2557f100800000000000000
+      internalID: 141675554456027117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_2
+      name: TX Struct_2
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 24
-        height: 32
+        x: 223
+        y: 383
+        width: 67
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95865fbeb8d916c80800000000000000
-      internalID: -8331204611373963175
+      spriteID: 520f03f6a28237150800000000000000
+      internalID: 5869078902113103909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_3
+      name: TX Struct_3
       rect:
         serializedVersion: 2
-        x: 71
-        y: 0
-        width: 24
-        height: 32
+        x: 407
+        y: 420
+        width: 82
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28f643d3f1dc9e250800000000000000
-      internalID: 5974531914738200450
+      spriteID: 785710af64cce8990800000000000000
+      internalID: -7381738133999487609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_4
+      name: TX Struct_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 24
-        height: 32
+        x: 31
+        y: 255
+        width: 66
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17269a4efca9e5a10800000000000000
-      internalID: 1900126310482141809
+      spriteID: 7180bb78d5dbbe8f0800000000000000
+      internalID: -510105923369629673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_5
+      name: TX Struct_5
       rect:
         serializedVersion: 2
-        x: 121
-        y: 0
-        width: 24
-        height: 32
+        x: 127
+        y: 255
+        width: 67
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9139dd81dbeff280800000000000000
-      internalID: -9007221444457188966
+      spriteID: f5310236ca539dad0800000000000000
+      internalID: -2677049488981355681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_6
+      name: TX Struct_6
       rect:
         serializedVersion: 2
-        x: 145
-        y: 0
-        width: 24
-        height: 32
+        x: 223
+        y: 255
+        width: 67
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e54ceeb019584850800000000000000
-      internalID: 6361432402118329833
+      spriteID: 347dd2c761b6edcc0800000000000000
+      internalID: -3684389700825655485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Idle_7
+      name: TX Struct_7
       rect:
         serializedVersion: 2
-        x: 168
-        y: 0
-        width: 24
-        height: 32
+        x: 415
+        y: 319
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,74 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf7bd05497d6dc510800000000000000
-      internalID: 1571032212639168507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Idle_8
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 0
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5071d9afec320a960800000000000000
-      internalID: 7611122742130972421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Idle_9
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 0
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abf99f10e2b23e740800000000000000
-      internalID: 5180031473007828922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Idle_10
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 0
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8830ccc7a9059bfa0800000000000000
-      internalID: -5784503621931760760
+      spriteID: 1e0f2325c53c461b0800000000000000
+      internalID: -5664187630041763615
       vertices: []
       indices: 
       edges: []
@@ -411,17 +336,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Skeleton Idle_0: 7928858964255100155
-      Skeleton Idle_1: -289379152601194012
-      Skeleton Idle_10: -5784503621931760760
-      Skeleton Idle_2: -8331204611373963175
-      Skeleton Idle_3: 5974531914738200450
-      Skeleton Idle_4: 1900126310482141809
-      Skeleton Idle_5: -9007221444457188966
-      Skeleton Idle_6: 6361432402118329833
-      Skeleton Idle_7: 1571032212639168507
-      Skeleton Idle_8: 7611122742130972421
-      Skeleton Idle_9: 5180031473007828922
+      TX Struct_0: -5380237423685108026
+      TX Struct_1: 141675554456027117
+      TX Struct_2: 5869078902113103909
+      TX Struct_3: -7381738133999487609
+      TX Struct_4: -510105923369629673
+      TX Struct_5: -2677049488981355681
+      TX Struct_6: -3684389700825655485
+      TX Struct_7: -5664187630041763615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
