@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - MainCharacter
+  - UI HP bar
+  - Enemy
+  - HitTriggerZone
   layers:
   - Default
   - TransparentFX

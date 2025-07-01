@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2f0d31b9fe031459c6076a6b9d62e7, type: 3}
   m_Name: CatFridge
   m_EditorClassIdentifier: 
-  name: 
+  name: CatFridge
   healthPoints: 0
-  attack: 0
+  attack: 10
+  sprite: {fileID: 1549508750607559342, guid: 0829dd6f9fa9c964eb9e2199c84692c7, type: 3}
