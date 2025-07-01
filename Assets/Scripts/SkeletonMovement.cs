@@ -12,6 +12,7 @@ public class SkeletonMovement : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     public Animator animator;
+    private bool isStriking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,11 +28,28 @@ public class SkeletonMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement.Normalize();
+
+        isStriking = Input.GetKeyDown(KeyCode.Space);
+        if (isStriking == true)
+        {
+            animator.SetBool("isStriking", true);
+        }
+        else
+        {
+            animator.SetBool("isStriking", false);
+        }
+
+        if (IsAnimationPlaying("Strike")) 
+        {
+            movement.x = 0;
+            movement.y = 0;
+        }
     }
 
     private void FixedUpdate()
     {
         rigidBody2D.MovePosition(rigidBody2D.position + movement * moveSpeed * Time.deltaTime);
+
         if (movement.x != 0 || movement.y != 0)
         {
             animator.SetFloat("isWalking", 1);
@@ -48,5 +66,12 @@ public class SkeletonMovement : MonoBehaviour
         {
             animator.SetFloat("isWalking", 0);
         }
+    }
+
+    private bool IsAnimationPlaying(string animationName) 
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+        return stateInfo.IsName(animationName);
     }
 }
