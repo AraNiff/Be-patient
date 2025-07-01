@@ -15,7 +15,7 @@ public class SkeletonMovement : MonoBehaviour
     public LogicSceneScript logicScript;
 
     public Animator animator;
-    private bool isStriking = false;
+    public bool isStriking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -75,11 +75,11 @@ public class SkeletonMovement : MonoBehaviour
             animator.SetFloat("isWalking", 1);
             if (movement.x < 0)
             {
-                spriteRenderer.flipX = true;
+                character.transform.localScale = new Vector3(-1, 1, 1);
             }
             else
             {
-                spriteRenderer.flipX = false;
+                character.transform.localScale = new Vector3(1, 1, 1);
             }
         }
         else
@@ -88,8 +88,8 @@ public class SkeletonMovement : MonoBehaviour
         }
     }
 
-    //Strike return name
-    private bool IsAnimationPlaying(string animationName) 
+    //Strike return animation name
+    public bool IsAnimationPlaying(string animationName) 
     {
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
