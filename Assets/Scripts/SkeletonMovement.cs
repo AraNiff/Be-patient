@@ -11,6 +11,9 @@ public class SkeletonMovement : MonoBehaviour
     private Vector2 movement;
     public SpriteRenderer spriteRenderer;
 
+    public ParameterPlayerScript playerScript;
+    public LogicSceneScript logicScript;
+
     public Animator animator;
     private bool isStriking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,10 +28,18 @@ public class SkeletonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // death logic
+        if(playerScript.playerIsAlive == false)
+        {
+            animator.SetBool("isDead", true);
+        }
+
+        //Movement axises
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement.Normalize();
 
+        // Strike logic animation
         isStriking = Input.GetKeyDown(KeyCode.Space);
         if (isStriking == true)
         {
@@ -44,12 +55,21 @@ public class SkeletonMovement : MonoBehaviour
             movement.x = 0;
             movement.y = 0;
         }
+
     }
 
     private void FixedUpdate()
     {
-        rigidBody2D.MovePosition(rigidBody2D.position + movement * moveSpeed * Time.deltaTime);
+        //Movement
+        if (playerScript.playerIsAlive == true)
+        {
+            rigidBody2D.MovePosition(rigidBody2D.position + movement * moveSpeed * Time.deltaTime);
+        } else
+        {
+            logicScript.Death();
+        }
 
+        //Walk animation
         if (movement.x != 0 || movement.y != 0)
         {
             animator.SetFloat("isWalking", 1);
@@ -68,6 +88,7 @@ public class SkeletonMovement : MonoBehaviour
         }
     }
 
+    //Strike return name
     private bool IsAnimationPlaying(string animationName) 
     {
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
