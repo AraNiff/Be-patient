@@ -8,9 +8,6 @@ public class CatFridgeScript : MonoBehaviour
     public int healthPoints;
     public int attack;
 
-    public GameObject catFridge;
-
-
     public void Start()
     {
         healthPoints = 100;
@@ -26,7 +23,7 @@ public class CatFridgeScript : MonoBehaviour
     {
         if (healthPoints <= 0)
         {
-            Object.Destroy(catFridge);
+            Object.Destroy(gameObject);
         }
     }
 
