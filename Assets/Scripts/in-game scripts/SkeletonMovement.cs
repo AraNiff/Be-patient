@@ -10,7 +10,7 @@ public class SkeletonMovement : MonoBehaviour
     public Transform character;
     private Vector2 movement;
     public SpriteRenderer spriteRenderer;
-
+    public AttacjScript AttackScript;
     public ParameterPlayerScript playerScript;
     public LogicSceneScript logicScript;
 
@@ -43,6 +43,7 @@ public class SkeletonMovement : MonoBehaviour
         isStriking = Input.GetKeyDown(KeyCode.Space);
         if (isStriking == true)
         {
+            AttackScript.Attack(AttackScript.DamageAount);
             animator.SetBool("isStriking", true);
         }
         else

@@ -17,26 +17,15 @@ public class CatFridgeScript : MonoBehaviour
     {
         healthPoints -= damage;
         Debug.Log("Enemy took damage: " + damage + ". Remaining health: " + healthPoints);
-    }
-
-    private void dead()
-    {
         if (healthPoints <= 0)
         {
-            Object.Destroy(gameObject);
+            Die();
+            Debug.Log("Enemy died");
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Die()
     {
-        if(collision.CompareTag("HitTriggerZone"))
-        {
-            TakeDamage(10);
-            if (healthPoints <= 0)
-            {
-                dead();
-            }
-        }
+        Object.Destroy(gameObject);
     }
-
 }
