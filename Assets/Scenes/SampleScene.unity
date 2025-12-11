@@ -821,7 +821,7 @@ MonoBehaviour:
   playerIsAlive: 0
   animator: {fileID: 1021601585}
   healthBar: {fileID: 112457316}
---- !u!114 &1021601591
+--- !u!114 &1021601587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -830,10 +830,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021601579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c1f8328062354641a7b6a1b9a3caf9e, type: 3}
+  m_Script: {fileID: 11500000, guid: d6dff83556aa1264aae0d55650eb42cc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LayerRender
-  sortMultiplier: 10
+  m_EditorClassIdentifier: 
+  AttackCollider: {fileID: 8923154529565211560}
+  DamageAount: 10
 --- !u!1 &1024712434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,9 +2350,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1373893123}
     - target: {fileID: 7567720599022178851, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
+      propertyPath: AttackScript
+      value: 
+      objectReference: {fileID: 1021601587}
+    - target: {fileID: 7567720599022178851, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1021601586}
+    - target: {fileID: 7567720599022178851, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
+      propertyPath: AttackCollider
+      value: 
+      objectReference: {fileID: 8923154529565211559}
     m_RemovedComponents:
     - {fileID: 452292207179619411, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
     m_RemovedGameObjects:
@@ -2363,8 +2372,18 @@ PrefabInstance:
       addedObject: {fileID: 1021601586}
     - targetCorrespondingSourceObject: {fileID: 3360051675923431294, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1021601591}
+      addedObject: {fileID: 1021601587}
   m_SourcePrefab: {fileID: 100100000, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
+--- !u!1 &8923154529565211559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5138261539429014760, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
+  m_PrefabInstance: {fileID: 8923154529565211558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &8923154529565211560 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8210813508699262841, guid: 5a01a937889309543ae9e4b7f891a638, type: 3}
+  m_PrefabInstance: {fileID: 8923154529565211558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
