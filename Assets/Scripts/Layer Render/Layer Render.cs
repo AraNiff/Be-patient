@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LayerRender : MonoBehaviour
 {
-    [SerializeField] public float sortMultiplier = 50f;
+    [SerializeField] public float sortMultiplier = 40f;
 
     private SpriteRenderer spriteRenderer;
     private float lastY = float.MaxValue;
