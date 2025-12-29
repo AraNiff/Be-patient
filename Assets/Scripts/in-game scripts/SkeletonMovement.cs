@@ -51,10 +51,15 @@ public class SkeletonMovement : MonoBehaviour
             animator.SetBool("isStriking", false);
         }
 
-        if (IsAnimationPlaying("Strike")) 
+        if (IsAnimationPlaying("Strike"))
         {
-            movement.x = 0;
-            movement.y = 0;
+            //movement.x = 0;
+            //movement.y = 0;
+            moveSpeed = 0.5F;
+        }
+        else
+        {
+            moveSpeed = 2F;
         }
 
     }
