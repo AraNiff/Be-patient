@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdcb8bff4514d44cb27b93a78731646, type: 3}
+  m_Name: Pineaple
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  tile: {fileID: 0}
+  itemType: 1
+  actionType: 1
+  range: {x: 5, y: 4}
+  Stackable: 0
+  image: {fileID: -6378445352437616463, guid: 3388676086591b448ac8609cad5e7a3d, type: 3}
