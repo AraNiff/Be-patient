@@ -16,5 +16,7 @@ MonoBehaviour:
   itemType: 1
   actionType: 1
   range: {x: 5, y: 4}
-  Stackable: 0
+  stackable: 0
+  name: Sword
+  description: Old and rusty
   image: {fileID: -6378445352437616463, guid: 3388676086591b448ac8609cad5e7a3d, type: 3}

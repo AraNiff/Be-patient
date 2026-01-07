@@ -6,18 +6,26 @@ using UnityEngine.EventSystems;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    
+    [Header("UI")]
     public Image image;
+    public Text countText;
     public Item item;
+    [HideInInspector] public int count = 1; 
     [HideInInspector] public Transform parentAfterDrag;
-    private void Start()
-    {
-        Initialize(item);
-    }
-    public void Initialize(Item newItem)
+
+    public void InitialiseItem(Item newItem)
     {
         item = newItem;
         image.sprite = newItem.image;
+        RefreshCount();
+    }
+
+    public void RefreshCount()
+    {
+        countText.text = count.ToString();
+        // Показываем количество предмета тоько если количество > 1 чтоб было красивее
+        bool textActive = count > 1;
+        countText.gameObject.SetActive(textActive);
     }
 
     public void OnBeginDrag(PointerEventData eventData)

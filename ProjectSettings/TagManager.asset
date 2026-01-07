@@ -8,6 +8,7 @@ TagManager:
   - UI HP bar
   - Enemy
   - HitTriggerZone
+  - Item
   layers:
   - Default
   - TransparentFX
