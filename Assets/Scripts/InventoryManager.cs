@@ -7,14 +7,35 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryItemPrefab;
     // -1 значит что ни один слот не selected
     public int selectedSlot = -1;
+    public GameObject trashSlot;
+    [Tooltip("GameObject с Canvas (panel) инвентаря")]
+    public GameObject inventoryCanvas;
+
+    [Tooltip("Клавиша для открытия/закрытия")]
+    public KeyCode toggleKey = KeyCode.E;
+
+    [Tooltip("При открытии ставить паузу (Time.timeScale = 0)")]
+    public bool pauseGame = false;
+
+    public MonoBehaviour playerMovement;
+    bool isOpen = false;
 
     private void Start()
     {
         ChangeSelectedSlot(0);
+        if (inventoryCanvas != null)
+        {
+            inventoryCanvas.SetActive(isOpen);
+        }
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(toggleKey))
+        {
+            ToggleInventory();
+        }
+
         if (Input.inputString != null)
         {
             bool isNumber = int.TryParse(Input.inputString, out int number);
@@ -97,6 +118,35 @@ public class InventoryManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void ToggleInventory()
+    {
+        isOpen = !isOpen;
+        if (inventoryCanvas != null)
+        {
+            inventoryCanvas.SetActive(isOpen);
+            DeleteItemInTheTrash();
+        }
+
+        if (pauseGame)
+        {
+            Time.timeScale = isOpen ? 0f : 1f;
+            if (playerMovement != null)
+            {
+                playerMovement.enabled = !isOpen;
+            }
+        }
+    }
+    
+    public void DeleteItemInTheTrash()
+    {
+        if (trashSlot.transform.childCount != 0)
+        {
+            Transform itemInTheTrash = trashSlot.transform.GetChild(0);
+            Destroy(itemInTheTrash.gameObject);
+            return;
+        }
     }
 }
 

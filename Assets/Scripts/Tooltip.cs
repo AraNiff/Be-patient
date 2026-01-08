@@ -46,7 +46,9 @@ public class Tooltip : MonoBehaviour
             layoutElement.enabled = (headerLenght > characterWrapLimit || contentLenght > characterWrapLimit) ? true : false;
         }
 
-        Vector2 position = Input.mousePosition;
+        float rectSizeY = rectTransform.rect.height;
+        float rectSizeX = rectTransform.rect.width;
+        Vector2 position = Input.mousePosition + new Vector3(rectSizeX / 2f, -rectSizeY / 2f, 0f);
 
         float pivotX = position.x / Screen.width;
         float pivotY = position.y / Screen.height;
